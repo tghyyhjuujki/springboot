@@ -1,0 +1,84 @@
+/* 한글 깨지면 이거 넣으셈 */
+@charset "utf-8";
+
+/* 레이아웃 */
+#wrap {width: 100%}
+#header {
+    width: 100%; height: 114px; background-color: rgb(102, 177, 238);
+}
+#contents{}
+#footer {width: 100%; height: 200px; background-color: #222; color: white;}
+
+/* 컨텐츠 레이아웃 */
+/* #cont_tit {width: 100%; height: 200px; background: #444;} */
+/* #cont_ban {width: 100%; height: 430px; background: rgb(102, 177, 238);} */
+#cont_cont {background: white;}
+
+/* 컨테이너 */
+.container{width:1110px; margin: 0 auto; height: inherit; /*background: rgba(255,255,255,0.3);*/}
+.header{}
+
+/* header의 자식이기 때문에 아래와 같이 써서 한눈에 알아보게 함 사실 .header은 안 써도 된다 */
+.header .header-menu{text-align: right;}
+
+/* a태그 안에 오른쪽 정렬(text-align: right;) 주면 안먹힘 이보다 상위에 걸어줘야한다 */
+/* 왜냐하면 글씨는 inline구조이기 때문에 안먹힘, 패딩 역시 마찬가지라 윗 부분은 패딩이 안 먹힘 */
+/* 그렇다고 블럭을 쓰면 한 칸씩 차지해버리고 처리하고 어려워짐 */
+/* 이때 인라인이면서 블록 성질을 가진inline-block을 사용한다 */
+.header .header-menu a{color: rgba(255, 255, 255, 0.815); 
+    padding: 18px 0px 0px 13px; display: inline-block; 
+    text-decoration: none; font-size: 14px;}
+
+.header .header-menu a:hover{text-decoration: underline;}
+.header .header-tit{}
+.header .header-tit h1{font-size:27px; padding: 0px 20px 0px 20px; display: inline-block; }
+.header .header-tit a{color:white;}
+.header .header-icon{}
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color:rgb(102, 177, 238);
+    color: white;
+    padding: 2px 20px 9px 20px;
+    font-size: 16px;
+    border: none;
+    margin: 0;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(102, 177, 238);
+    min-width: 100%;
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {text-decoration: underline;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+.cont{overflow: hidden; width: 1120px;}
+.cont .column{}
+.cont .col1{ float: left; width: 700px; height:360px; margin: 30px 30px 30px 0; padding-right: 30px; border-right: 1px solid#d6d6d6; border-bottom: 1px solid#d6d6d6;}
+.cont .col2{ float: right;width: 320px; height:1140px; margin: 30px 0 30px 0; padding-right: 30px;}
+.cont .col3{ float: left;width: 700px; height:360px; margin: 0 30px 30px 0; padding-right: 30px; border-right: 1px solid#d6d6d6;border-bottom: 1px solid#d6d6d6;}
+.cont .col4{ float: left;width: 700px; height:360px; margin: 0 30px 30px 0; padding-right: 30px; border-right: 1px solid#d6d6d6;border-bottom: 1px solid#d6d6d6;}
+
+/* 홈페이지 오른쪽 */
+.cont .loginbox_naver{background: rgb(0, 235, 30); text-align: center; font-size: 20px; margin: 20px 0 20px 0; padding: 15px; color: white; display: block;}
+.cont .loginbox_google{background: rgb(220, 78, 65); text-align: center; font-size: 20px; margin: 20px 0 20px 0; padding: 15px; color: white; display: block;}
+.cont .loginbox-bottom{text-align: right; text-decoration: none; font-size: 13px; padding-bottom: 30px;border-bottom: 1px solid#e4e4e4;}

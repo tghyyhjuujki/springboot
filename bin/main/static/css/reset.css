@@ -1,0 +1,16 @@
+/* 여백 초기화 하는 css */
+@charset "utf-8";
+
+body, div, ul, li, dl, dt, ol, h1, h2, h3, h4, h5, h6, input, fieldset, legend, p, select, table,
+th, td, tr, textarea, button, form {margin: 0; padding: 0;}
+
+/* 링크 초기화 */
+a {color: #222; text-decoration: none;}
+
+/* 불릿기호 초기화 */
+dl,ul,li,ol,menu{list-style: none;}
+
+/* 폰트 초기화 */
+body, input, textarea, select, button, table {
+    font-family: 'Noto Sans KR','Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif; 
+    color: #222; font-size: 13px; line-height: 1.5;}
