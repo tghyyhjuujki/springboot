@@ -1,5 +1,6 @@
 package springboot.web;
 
+import org.apache.catalina.security.SecurityConfig;
 import org.hamcrest.Matchers;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -11,8 +12,6 @@ import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
-
-import springboot.config.oauth.SecurityConfig;
 
 // 스프링부트 테스트와 JUnit 사이에 연결자 역할
 @RunWith(SpringRunner.class)
