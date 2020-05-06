@@ -21,6 +21,7 @@ public class IndexControllerTest {
 		String html = this.restTemplate.getForObject("/", String.class);
 		System.out.println(html);
 		
+		//이 문장이 있는지 index.mustache에서 찾음
 		Assertions.assertThat(html).contains("Booker");
 	}
 
