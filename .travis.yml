@@ -33,7 +33,7 @@ deploy:
       local_dir: deploy
       wait-until-deployed: true
       
-notification:
-    email:
-        recipients:
-            # - tghyyhju@gmail.com
+#notification:
+#    email:
+#        recipients:
+#            - tghyyhju@gmail.com
