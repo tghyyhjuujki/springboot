@@ -10,6 +10,12 @@ var index = {
 		$('#btn-delete').on('click', function() {
 			_this.delete();
 		});
+		$('#info-customer').on('click', function() {
+			_this.customer();
+		});
+		$('#info-employee').on('click', function() {
+			_this.employee();
+		});
 	}, 
 	save: function() {
 		var data = {
@@ -72,7 +78,9 @@ var index = {
 			alert(JSON.stringify(e));
 		});
 	}
-
+	infoCustomer: function(){
+		var role = $('#role').val();
+	}
 };
 
 index.init();
