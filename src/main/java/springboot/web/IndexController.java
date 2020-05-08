@@ -32,6 +32,7 @@ public class IndexController {
 			model.addAttribute("LoginUserName", user.getName());
 			//model.addAttribute("LoginUserPicture", user.getPicture());
 			model.addAttribute("LoginDefault", user.getRole());
+			System.out.println(">>>" + user.getName());
 			if(user.getRole().name() == "DEFAULT") {
 				System.out.println(">>>" + user.getRole());
 				user.setRole(Role.USER);
@@ -39,8 +40,14 @@ public class IndexController {
 				System.out.println(">>>" + user.getRole());
 			}
 		}
-		
 		return "index";    // <== src/main/resources/templates/index.mustache 파일을 반환
+	}
+	
+	@GetMapping("/info")
+	public String info(Model model) {
+		SessionUser user = (SessionUser)httpSession.getAttribute("user");
+		model.addAttribute("LoginUserName", user.getName());
+		return "info";
 	}
 	
 	@GetMapping("/posts/save")

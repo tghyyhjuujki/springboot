@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="/css/style.css">
 	<meta http-equip="Content-Type" content="text/html; charset=UTF-8" />
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<!-- 웹폰트 -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" >
 </head>
 <body>
 	<div id="wrap">
@@ -13,10 +15,14 @@
                 <div class="container">
                     <div class="header">
                         <div class="header-menu">
-                            <a href="login.html">고객센터</a>
+                            <a href="">고객센터</a>
                             {{^LoginUserName}}
-                            <a href="login.html">로그인</a>
-                            <a href="login.html">회원가입</a>
+                            	<a href="">로그인</a>
+                            	<a href="">회원가입</a>
+                            {{/LoginUserName}}
+                            {{#LoginUserName}}
+                            	<a href="">정보수정</a>
+                            	<a href="">로그아웃</a>
                             {{/LoginUserName}}
                         </div>
                         <div class="header-tit">
