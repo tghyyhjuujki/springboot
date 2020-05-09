@@ -78,9 +78,6 @@ var index = {
 			alert(JSON.stringify(e));
 		});
 	}
-	infoCustomer: function(){
-		var role = $('#role').val();
-	}
 };
 
 index.init();
