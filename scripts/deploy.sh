@@ -1,6 +1,6 @@
 #!/bin/bash
 
-REPOSITORY=/home/ec2-user/app/step2
+REPOSITORY=/home/ec2-user/app/step3
 
 echo "> $REPOSITORY 디렉터리로 이동"
 cd $REPOSITORY
