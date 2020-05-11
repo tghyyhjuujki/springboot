@@ -3,13 +3,13 @@
 # 쉬고 있는 프로파일 찾기
 function find_idle_profile()
 {
-	RESPONSE_CODE=$(curl -s -o /dev/null -w "%{http_code}" http://localhost/profile)
+	RESPONSE_CODE=$(curl -s -o /dev/null -w "%{http_code}" http://localhost:8081/profile)
 	
 	if [ ${RESPONSE_CODE} -ge 400 ]
  	then
  		CURRENT_PROFILE=real2
  	else
- 		CURRENT_PROFILE=$(curl -s http://localhost/profile)
+ 		CURRENT_PROFILE=real1
  	fi
  	
  	if [ ${CURRENT_PROFILE} == real1 ]
