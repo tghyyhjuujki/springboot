@@ -58,7 +58,7 @@ var index = {
 			contentType: "application/json; charset=UTF-8",
 			data: JSON.stringify(data)
 		}).done(function() {
-			alert("글이 수정되었습니다.");
+			alert("글이 수정되었습니다");
 			window.location.href = "/";
 		}).fail(function(e) {
 			alert(JSON.stringify(e));
