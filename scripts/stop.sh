@@ -7,9 +7,6 @@ source ${ABSDIR}/profile.sh
 IDLE_PORT=$(find_idle_port)
 
 echo "> $IDLE_PORT에서 구동중인 애플리케이션 PID 확인"
-echo "> stop_find : ${find_idle_port}"
-echo "> stop_find : $(find_idle_port)"
-echo "> stop_find : $find_idle_port"
 IDLE_PID=$(lsof -ti tcp:${IDLE_PORT})
 
 if [ -z ${IDLE_PID} ]
